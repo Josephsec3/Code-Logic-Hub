@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n; cin >> n;
+    int x=0, y=0, z=0;
+    for (int i=0; i<n; i++){
+      int currx, curry, currz; cin >> currx >> curry >> currz;
+      x+=currx;
+      y+=curry;
+      z+=currz;
+    }
+    cout << ((x == 0 && y == 0 && z == 0) ? "YES" : "NO");
+}
